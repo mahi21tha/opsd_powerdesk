@@ -1,0 +1,39 @@
+data:
+  opsd_csv: data/time_series_60min_singleindex.csv
+  lookback_days: 730      # 🔹 2 years
+
+countries: [DE, FR, ES]
+live_country: DE
+
+seasonality: 24
+
+forecast:
+  warmup_days: 60
+  horizon: 24
+  stride_hours: 24
+  train_frac: 0.8
+
+anomaly:
+  z_window_hours: 336
+  z_min_periods: 168
+  z_threshold: 3.0
+  cusum_k: 0.5
+  cusum_h: 5.0
+
+live:
+  start_history_days: 120
+  simulate_hours: 2000
+
+adaptation:
+  strategy: rolling_sarima
+  sarima_days: 90
+
+ml:
+  sample_verified: 100
+
+nn:
+  input_hours: 168    # past 7 days
+  output_hours: 24    # next 24 hours
+  epochs: 20
+  batch_size: 64
+

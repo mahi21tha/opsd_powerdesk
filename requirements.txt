@@ -1,0 +1,13 @@
+pandas
+numpy
+pyyaml
+matplotlib
+statsmodels
+scikit-learn
+lightgbm
+pmdarima
+tqdm
+streamlit
+seaborn
+joblib
+tensorflow
