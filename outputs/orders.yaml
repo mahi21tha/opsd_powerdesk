@@ -1,0 +1,30 @@
+DE:
+  order:
+  - 0
+  - 1
+  - 1
+  seasonal_order:
+  - 1
+  - 0
+  - 0
+  - 24
+ES:
+  order:
+  - 0
+  - 1
+  - 1
+  seasonal_order:
+  - 1
+  - 0
+  - 0
+  - 24
+FR:
+  order:
+  - 1
+  - 1
+  - 0
+  seasonal_order:
+  - 1
+  - 0
+  - 1
+  - 24
